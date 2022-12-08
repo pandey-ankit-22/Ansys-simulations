@@ -1,0 +1,9 @@
+echo off
+set LOCALHOST=%COMPUTERNAME%
+set KILL_CMD="C:\PROGRA~1\ANSYSI~1\ANSYSS~1\v222\fluent/ntbin/win64/winkill.exe"
+
+"C:\PROGRA~1\ANSYSI~1\ANSYSS~1\v222\fluent\ntbin\win64\tell.exe" PANDEYCOMPUTER 54355 CLEANUP_EXITING
+if /i "%LOCALHOST%"=="PANDEYCOMPUTER" (%KILL_CMD% 11912) 
+if /i "%LOCALHOST%"=="PANDEYCOMPUTER" (%KILL_CMD% 15436) 
+if /i "%LOCALHOST%"=="PANDEYCOMPUTER" (%KILL_CMD% 13064)
+del "C:\Users\ankit\Desktop\Ankit Document\ANSYS SIMULATION\Projects\Flow in a Bend Pipe\cleanup-fluent-PANDEYCOMPUTER-15436.bat"
